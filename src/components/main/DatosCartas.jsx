@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function DatosCartas({prod}) {
   return (
@@ -12,7 +13,7 @@ export default function DatosCartas({prod}) {
       <li>/300g</li>
     </ul>
     <button className="botonCarta boton1"><span>Add to Cart</span> </button>
-    <button className="botonCarta boton2"><span>Lear More</span></button>
+    <button className="botonCarta boton2"><Link>Lear More</Link></button>
   </div>
   )
 }

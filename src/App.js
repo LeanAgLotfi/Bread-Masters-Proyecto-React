@@ -1,36 +1,25 @@
-import React, { Component, useEffect, useState } from "react";
+import React from "react";
 import "./components/styles/style.css";
 import NavBar from "./components/header/NavBar";
 import ContenedorCartas from "./components/main/ContenedorCartas";
 import Footer from "./components/footer/Footer";
-import {BrowserRouter, Routes, Route} from 'react-router-dom'
+// import {BrowserRouter, Routes, Route} from 'react-router-dom'
+// import ItemDetail from "./components/main/ItemDetail";
+import Home from "./components/main/Home";
+import ItemDetailContainer from "./components/main/ItemDetailContainer";
 
 function App (){
- const[op,setOp] = useState(['home', 'menú', 'contacto']);
-
- useEffect(()=>{
-  const TraerPanes = ()=>{
-      return new Promise ((res, rej) =>{
-          setTimeout(()=>{
-              res(op);
-          },500);
-      });
-  };
-  TraerPanes()
-  .then((res)=>{
-      setOp(res)
-  })
-  .catch((error)=>{
-      console.log(error)
-  });
-},[])
-
     return (
-    <div>
-       <NavBar op={op}/>
-          <ContenedorCartas/>
-     <Footer/>
-    </div>
+    <>
+       <NavBar />
+      <main>
+          <Home/>
+          <ItemDetailContainer /> 
+          <ContenedorCartas />
+      </main>
+        {/* <Home/> */}   
+     <Footer />
+    </>
   );
 }
 

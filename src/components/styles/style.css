@@ -2,19 +2,26 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'El Messiri', sans-serif;
+    font-family:'El Messiri', sans-serif;
 }
 
 body{
     background-color: #000;
-    
+    background-image: url(https://res.cloudinary.com/dsoa7ssat/image/upload/v1665675349/Panes/fondo-panes-2_rzlkml.jpg);
+    max-width: 100%;
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    filter: saturate(0.9);
 }
 
 .ContenedorNav{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #fff;
+    background-color: #ffffff63;
 
 }
 
@@ -22,6 +29,13 @@ body{
     width: 150px;
     height: 150px;
     margin-top: 10px;
+    filter: brightness(0);
+    filter: drop-shadow(3px 7px 7px black);
+
+}
+
+.ContenedorLogo img:hover{
+    filter: invert(1);
 }
 
 .MenuNavegable{
@@ -32,20 +46,17 @@ body{
    
 }
 
-.MenuNavegable a{
+.MenuNavegable li{
     padding-left: 40px;
     padding-right: 40px;
     font-size: 25px;
-    text-decoration: none;
-    color: #1D1D1D;
     cursor: pointer;
 }
 
-.MenuNavegable a:hover{
+.MenuNavegable li:hover{
     color: #f3a446;
     border-bottom: 1px solid #f3a446;
 }
-
 
 .MenuNavegableIcons{
     display: flex;
@@ -60,15 +71,6 @@ body{
     font-size: 20px;
     cursor: pointer;
 }
-
-.MenuNavegableIcons li a{
-    color: #1D1D1D;
-}
-
-.MenuNavegableIcons li a:hover{
-    color: #f3a446;
-}
-
 
 .contenedorGrid{
 	width: 100%;
@@ -100,7 +102,7 @@ body{
 }
 
 .NombreCarta{
-  
+   font-family:'El Messiri', sans-serif;
    color: #fff;
 }
 
@@ -160,9 +162,120 @@ body{
     color: #A06235;
 }
 
+.Item-Detail-Conteiner{
+padding: 20px;
+margin: 30px 10px;
+display: flex;
+justify-content: space-between;
+color: #fff;
+background: #A06235;
+border-radius: 10px;
+border: 2px white solid;
+}
+
+.conteiner-Detail{
+padding: 5px;
+display: flex;
+flex-direction: column;
+}
+
+.conteiner-Detail img{
+width: 400px;
+height: 500px;
+
+}
+
+.conteiner-Detail h1{
+    margin: 20px;
+}
+
+
+.conteiner-Datos{
+padding: 30px;
+width: 600px;
+height: 500px;
+display: flex;
+flex-direction: column;
+}
+
+.conteiner-Datos p{
+   font-size: 25px;
+   padding: 5px;
+   margin-top: 50px;
+   margin-bottom: 50px;
+}
+
+.HomeConteiner{
+    background-image: url(https://res.cloudinary.com/dsoa7ssat/image/upload/v1665675349/Panes/fondo-panes-2_rzlkml.jpg);
+    max-width: 100%;
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    filter: saturate(0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.HomeConteiner .Home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    padding: 50px;
+    width: 560px;
+    height: 300px;
+    border-radius: 100px;
+    position: relative;
+    top: -50px;
+    color: #423939;
+    background: #ffffff63;
+}
+
+.Home img {
+    width: 150px;
+    height: 150px;
+    filter: brightness(0);
+}
+
+.HomeConteiner div h1{
+    color: #000;
+ }
+.HomeConteiner div h2{
+   text-align: center;
+}
+
+.exploradorHome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 100px;
+    width: 200px;
+    height: 200px;
+    background: #ffffff63;
+}
+
+.botonHome{
+    width: 55px;
+    height: 60px;
+    border: 1px solid #A06235;
+    color: #000;
+    background: #f3a446;
+    border-radius: 30px;
+    cursor: pointer;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
 .FooterPage{
     position: relative;
-    top: 84px;
     background-color: #fff;
     color: #f3a446;
 }

@@ -1,10 +1,12 @@
 import { NavLink } from "react-router-dom";
 import React from "react";
 
-export default function ItemList({prod}) {
+export default function ItemList() {
   return (
     <> 
-    <NavLink>{prod}</NavLink>
+    <NavLink >HOME</NavLink>
+    <NavLink >MENÚ</NavLink>
+    <NavLink >CONTACTO</NavLink>
     </>
  
   )

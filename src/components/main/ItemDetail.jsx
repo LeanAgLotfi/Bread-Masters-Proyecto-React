@@ -1,13 +1,23 @@
 import React from 'react'
 
-function ItemDetail(){
+function ItemDetail({detail}){
     return(
-        <div>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos rerum voluptate pariatur quibusdam officia asperiores obcaecati facilis possimus quasi consequuntur nulla omnis accusamus tempore quia molestiae fugit, dicta necessitatibus quis?
-        </p>
+        <>
+        <div className='conteiner-Detail'>
+            <img src={detail.img} alt={detail.nombre}/>
+            <h1>{detail.nombre}</h1>
         </div>
-    )
+            <div className="conteiner-Datos">
+                <h2>Descripcion</h2>
+                 <p>
+                    {detail.desc}
+                </p>
+                <button className="botonCarta boton1">
+                    <span>Add to Cart</span> 
+                </button>
+            </div>
+        </>
+     )
 }
 
 export default ItemDetail;

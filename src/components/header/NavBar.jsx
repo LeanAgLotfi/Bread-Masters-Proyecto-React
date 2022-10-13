@@ -5,18 +5,14 @@ import Logo from "./Logo";
 import "../styles/style.css";
 
 
-export default function NavBar({op}) {
+export default function NavBar() {
   return (
     <header>
         <div className="ContenedorNav">
           <Logo/>
         <nav className="NavegacionPage">
             <ul className="MenuNavegable">
-              {
-                op.map((prod, index)=>{
-                  return <ItemList prod={prod} key={index}/>
-                })
-              }
+              <ItemList/>
             </ul>  
         </nav>
         <nav className="NavegacionPage"> 
