@@ -46,14 +46,16 @@ body{
    
 }
 
-.MenuNavegable li{
+.MenuNavegable a{
     padding-left: 40px;
     padding-right: 40px;
     font-size: 25px;
     cursor: pointer;
+    text-decoration: none;
+    color: #000;
 }
 
-.MenuNavegable li:hover{
+.MenuNavegable a:hover{
     color: #f3a446;
     border-bottom: 1px solid #f3a446;
 }
@@ -124,7 +126,7 @@ body{
 
 .botonCarta{
     margin: 7px;
-    padding: 7px;
+    padding: 15px;
     padding-left: 40px;
     padding-right: 40px;
     border: none;
@@ -144,6 +146,10 @@ body{
     overflow: hidden;
 }
 
+.boton2 a{
+   text-decoration: none;
+   color: #000;
+}
 .boton1{
     padding-left: 20px;
     padding-right: 20px;

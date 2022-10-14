@@ -17,7 +17,7 @@ export default function ContenedorCartas() {
                 // const productos = panes.find((prod)=> prod.id === Number(id))
                 setTimeout(()=>{
                     res(panes);
-                },2000);
+                },500);
             });
         };
         TraerPanes()

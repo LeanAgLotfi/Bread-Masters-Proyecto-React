@@ -1,5 +1,6 @@
 import React from 'react';
 import { BsChevronDown } from "react-icons/bs";
+import { Link } from 'react-router-dom';
 
 
 export default function Home() {
@@ -13,7 +14,7 @@ export default function Home() {
     <div className="exploradorHome">
         <h3>EXPLORE</h3>
         <button className="botonHome">
-            <span><BsChevronDown/></span>
+            <Link to={'/item'}><BsChevronDown/></Link>
     </button>
     </div>
     

@@ -4,9 +4,9 @@ import React from "react";
 export default function ItemList() {
   return (
     <> 
-    <NavLink >HOME</NavLink>
-    <NavLink >MENÚ</NavLink>
-    <NavLink >CONTACTO</NavLink>
+    <NavLink to={'/'}>HOME</NavLink>
+    <NavLink to={'/item'}>MENÚ</NavLink>
+    <NavLink to={'/contacto'}>CONTACTO</NavLink>
     </>
  
   )
