@@ -1,6 +1,19 @@
-import React from 'react'
+import React, { useState } from 'react';
+import { useContext } from 'react';
+import { Link } from 'react-router-dom';
+import Contador from './Contador';
+import ContenedorCartas from './ContenedorCartas';
 
 function ItemDetail({detail}){
+const [unidades, setUnidades] = useState(0);
+
+const { addToCart } = useContext(ContenedorCartas);
+
+function CantidadPanes(horneados){
+    setUnidades(horneados);
+    addToCart(detail, horneados);
+};
+
     return(
         <>
         <div className='conteiner-Detail'>
@@ -12,9 +25,15 @@ function ItemDetail({detail}){
                  <p>
                     {detail.desc}
                 </p>
-                <button className="botonCarta boton1">
-                    <span>Add to Cart</span> 
-                </button>
+                    <h1>Precio = ${detail.price}</h1>
+                    
+                    {
+                        unidades === 0 ?(
+                             <Contador cantidad={CantidadPanes} stock={detail.stock} initial={1}/>
+                        ):(
+                            <button className="botonCarta boton2"><Link to={'/carrito'}>Ir al carrito</Link></button>
+                        )       
+                    }  
             </div>
         </>
      )

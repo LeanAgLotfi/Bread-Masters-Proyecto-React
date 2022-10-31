@@ -17,6 +17,34 @@ body{
     filter: saturate(0.9);
 }
 
+body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background-color: #ffffff63;        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #ffffff63;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 2px solid #695e5e;  /* creates padding around scroll thumb */
+  }
+
+  .conteiner-Datos p::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+  
+  .conteiner-Datos p::-webkit-scrollbar-track {
+    background: #ffffff63;        /* color of the tracking area */
+  }
+  
+  .conteiner-Datos p::-webkit-scrollbar-thumb {
+    background-color: #ffffff63;    /* color of the scroll thumb */
+    border-radius: 10px;       /* roundness of the scroll thumb */
+    border: 1px solid #695e5e;  /* creates padding around scroll thumb */
+  }
+
 .ContenedorNav{
     display: flex;
     justify-content: space-around;
@@ -30,19 +58,34 @@ body{
     height: 150px;
     margin-top: 10px;
     filter: brightness(0);
-    filter: drop-shadow(3px 7px 7px black);
+    
 
 }
 
 .ContenedorLogo img:hover{
-    filter: invert(1);
+    filter: drop-shadow(3px 7px 7px black);
+    transition-duration: 0.5s;
 }
+
+.NavegacionPage{
+    padding: 10px;
+}
+
 
 .MenuNavegable{
     display: flex;
     justify-content: center;
     align-items: center;
     list-style: none;
+    text-align: center;
+   
+}
+.MenuNavegable2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    text-align: center;
    
 }
 
@@ -50,14 +93,42 @@ body{
     padding-left: 40px;
     padding-right: 40px;
     font-size: 25px;
+    width: 250px;
     cursor: pointer;
     text-decoration: none;
     color: #000;
 }
 
+.MenuNavegable2 a{
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 25px;
+    cursor: pointer;
+    width: 250px;
+    text-decoration: none;
+    border: 1px solid;
+    color: #000;
+    background-color: #f3a446;
+    border-radius: 5px;
+    margin: 10px;
+}
+
 .MenuNavegable a:hover{
     color: #f3a446;
+    transition-duration: 0.4s;
     border-bottom: 1px solid #f3a446;
+}
+.MenuNavegable2 a:hover{
+    color: #f3a446;
+    transition-duration: 0.4s;
+    background-color: #1D1D1D;
+    border-bottom: 1px solid #f3a446;
+}
+
+.carta:hover{
+    filter:contrast(0.8);
+    transition-duration: 0.4s;
+    cursor: pointer;
 }
 
 .MenuNavegableIcons{
@@ -80,7 +151,7 @@ body{
 	grid-template-columns: repeat(4, 1fr);
     justify-items: center;
 	gap: 40px;
-    padding: 100px;
+    padding: 40px 100px 40px 100px;
 }
 
 
@@ -89,10 +160,11 @@ body{
     flex-direction: column;
    align-items: center;
     width: 220px;
-    height: 347px;
+    height: 360px;
     background-color: #1D1D1D;
     margin: 10px;
     border-radius: 15px;
+   
 }
 
 .imagenCarta img{
@@ -101,6 +173,7 @@ body{
   height: 140px;
   border-radius: 15px;
   border: solid 2px #f3a446;
+  background-color: #ffa5001c;
 }
 
 .NombreCarta{
@@ -126,13 +199,12 @@ body{
 
 .botonCarta{
     margin: 7px;
-    padding: 15px;
+    padding: 5px;
     padding-left: 40px;
     padding-right: 40px;
     border: none;
     background-color: #f3a446;
     border: 1px solid #f3a446;
-    color: white;
     text-decoration: none;
     display: inline-flex;
     align-items: center;
@@ -168,26 +240,39 @@ body{
     color: #A06235;
 }
 
+.contenedorContador{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contador{
+    display: flex;
+}
+
 .Item-Detail-Conteiner{
 padding: 20px;
 margin: 30px 10px;
 display: flex;
 justify-content: space-between;
 color: #fff;
-background: #A06235;
+background: #1d1d1df0;
 border-radius: 10px;
 border: 2px white solid;
+width: auto;
+height: 100vh;
 }
 
 .conteiner-Detail{
 padding: 5px;
 display: flex;
 flex-direction: column;
+align-items: center;
 }
 
 .conteiner-Detail img{
 width: 400px;
 height: 500px;
+border-radius: 15px;
 
 }
 
@@ -197,9 +282,9 @@ height: 500px;
 
 
 .conteiner-Datos{
-padding: 30px;
+padding: 20px;
 width: 600px;
-height: 500px;
+
 display: flex;
 flex-direction: column;
 }
@@ -208,7 +293,8 @@ flex-direction: column;
    font-size: 25px;
    padding: 5px;
    margin-top: 50px;
-   margin-bottom: 50px;
+   margin-bottom: 10px;
+   overflow-y: scroll;
 }
 
 .HomeConteiner{
