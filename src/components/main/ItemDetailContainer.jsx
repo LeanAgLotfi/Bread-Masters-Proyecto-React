@@ -27,7 +27,7 @@ export default function ItemDetailContainer() {
         .catch((error)=>{
             console.log(error)
         });
-    }, []);
+    }, [porId]);
 
 
   return (

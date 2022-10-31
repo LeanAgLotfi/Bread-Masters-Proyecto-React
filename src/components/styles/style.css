@@ -365,6 +365,44 @@ flex-direction: column;
     padding-right: 20px;
 }
 
+.carrito-contenedor{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.carrito-detalle{
+    width: 500px;
+    height: 250px;
+    background-color: #A06235;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+
+}
+
+.carrito-img{
+    width: 90px;
+    height: 90px;
+}
+
+.carrito-contenedor-precio{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carrito-contenedor-precio p{
+    margin: 0px 7px 0px 7px;
+    background-color: #f3a446;
+    width: 150px;
+    border-radius: 10px;
+    text-align: center;
+}
 
 .FooterPage{
     position: relative;

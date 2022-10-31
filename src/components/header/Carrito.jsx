@@ -7,11 +7,15 @@ export default function Carrito() {
 
 const { cart } = useContext(ContextoCarrito)
 
+if (cart.length === 0) {
+  return <h1>Aún no hay productos</h1>;
+}
+
   return (
-    <div className='Item-Detail-Conteiner'  >
+    <div className='carrito-contenedor'  >
         {
           cart.map((prod) => {
-            return <CartDetail prod={prod}/>
+            return <CartDetail prod={prod} key={prod.id}/>
           })
         }
     </div>

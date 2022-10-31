@@ -1,14 +1,22 @@
 import React from 'react'
 
-function CartDetail(prod) {
+
+function CartDetail({prod}) {
+
   return (
-    <div>
-        
-            <img src={prod.img} alt={prod.nombre} />
-            <h1>{prod.nombre}</h1>
-            <h2>Precio: ${prod.price}</h2>
-            <h2>Cantidad: {prod.cantidad}</h2>
-            <h3>SubTotal: ${prod.price * prod.cantidad}</h3>
+    <div className='carrito-detalle'>
+        <div className='carrito-contenedor-precio'>
+        <h1>{prod.nombre}</h1>
+            <img className='carrito-img' src={prod.img} alt={prod.nombre} />
+            
+        </div>
+        <p>Añadido a tu carrito!!</p>
+            <div className='carrito-contenedor-precio'>
+                <p>Precio: ${prod.price}</p>
+                <p>Cantidad: {prod.cantidad}</p>
+                <p>SubTotal: ${prod.price * prod.cantidad}</p>
+            </div>
+            <button className="botonCarta boton2">+</button>
        
     </div>
   )

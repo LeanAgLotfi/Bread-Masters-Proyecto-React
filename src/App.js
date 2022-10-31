@@ -16,11 +16,11 @@ function App (){
     <BrowserRouter>
     <NavBar />
     <Routes>
-    <Route path="/" element={<Home/>}/>
-    <Route path="/item" element={<ContenedorCartas />}/>
-    <Route path="/item/:categoryName" element={<ContenedorCartas />}/>
-    <Route path="/detalle/:porId" element={<ItemDetailContainer /> }/>
-    <Route path="/carrito" element={<Carrito/>}/>
+      <Route path="/" element={<Home/>}/>
+      <Route path="/item" element={<ContenedorCartas />}/>
+      <Route path="/item/:categoryName" element={<ContenedorCartas />}/>
+      <Route path="/detalle/:porId" element={<ItemDetailContainer /> }/>
+      <Route path="/carrito" element={<Carrito/>}/>
     </Routes>
     <Footer />
     </BrowserRouter>

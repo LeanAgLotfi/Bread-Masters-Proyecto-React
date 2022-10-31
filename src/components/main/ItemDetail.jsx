@@ -1,13 +1,12 @@
-import React, { useState } from 'react';
-import { useContext } from 'react';
+import {React,  useState, useContext } from 'react';
 import { Link } from 'react-router-dom';
+import { ContextoCarrito } from '../../context/ContextoCarrito';
 import Contador from './Contador';
-import ContenedorCartas from './ContenedorCartas';
 
 function ItemDetail({detail}){
 const [unidades, setUnidades] = useState(0);
 
-const { addToCart } = useContext(ContenedorCartas);
+const { addToCart } = useContext(ContextoCarrito);
 
 function CantidadPanes(horneados){
     setUnidades(horneados);
