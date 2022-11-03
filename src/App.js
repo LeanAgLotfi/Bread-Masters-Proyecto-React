@@ -8,7 +8,7 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import Home from "./components/main/Home";
 import ItemDetailContainer from "./components/main/ItemDetailContainer";
 import Carrito from "./components/header/Carrito";
-import Provider from './context/ContextoCarrito'
+import Provider from './context/ContextoCarrito';
 
 function App (){
     return (     
@@ -17,8 +17,8 @@ function App (){
     <NavBar />
     <Routes>
       <Route path="/" element={<Home/>}/>
-      <Route path="/item" element={<ContenedorCartas />}/>
       <Route path="/item/:categoryName" element={<ContenedorCartas />}/>
+      <Route path="/item" element={<ContenedorCartas />}/>
       <Route path="/detalle/:porId" element={<ItemDetailContainer /> }/>
       <Route path="/carrito" element={<Carrito/>}/>
     </Routes>

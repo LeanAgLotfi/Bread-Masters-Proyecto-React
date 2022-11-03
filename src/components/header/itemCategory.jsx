@@ -1,12 +1,41 @@
 import { NavLink } from "react-router-dom";
 import React from "react";
+import { useEffect } from "react";
+import { useState } from "react";
+import { collection, getDocs } from "firebase/firestore";
+import { db } from "../../services/ConfigFireBase";
 
 export default function ItemCategory() {
+
+const [category, setCategory]=useState([])
+
+useEffect(()=>{
+const categoryFire = collection(db, 'categorias')
+getDocs(categoryFire)
+.then((res)=>{
+  const categorias = res.docs.map((cat)=>{
+    return{
+      id: cat.id,
+      ...cat.data(),
+    };
+  });
+  setCategory(categorias)
+})
+.catch((error)=>{
+  console.log(error)
+  })
+},[])
+
+
   return (
     <> 
-    <NavLink to={'/item/trigo'}>TRIGO</NavLink>
-    <NavLink to={'/item/cereales'}>CEREALES</NavLink>
-    <NavLink to={'/item/legumbres'}>LEGUMBRES</NavLink>
+   {
+    category.map((cat)=>{
+      return(
+         <NavLink to={`/item/${cat.path}`}>{cat.name}</NavLink>
+      );
+    })
+   }
     </>
  
   )

@@ -1,35 +1,47 @@
-import React from 'react'
-import ItemDetail from './ItemDetail'
-import { useEffect, useState } from 'react'
-import { panes } from '../json/datos'
-import { useParams } from 'react-router-dom'
+import React from 'react';
+import ItemDetail from './ItemDetail';
+import { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
+import BounceLoader from "react-spinners/BounceLoader";
+import { collection, doc, getDoc } from 'firebase/firestore';
+import { db } from '../../services/ConfigFireBase';
 
 export default function ItemDetailContainer() {
 
     const[detail,setDetail] = useState({});
-
+    const[loading, setLoading] = useState(true)
     const { porId } = useParams();
 
-    useEffect(()=>{
-        const TraerPanes = ()=>{
-            return new Promise ((res, rej) =>{
-                 const productos = panes.find((prod)=> prod.id === Number(porId));
-
-                setTimeout(() => {
-                    res(productos);
-                },500);
+useEffect(()=>{
+   
+const collectionProd = collection(db,'panes')
+const ref = doc(collectionProd, porId)
+        setTimeout(()=>{
+            getDoc(ref)
+            .then((res)=>{
+            setDetail({
+                    id: res.id,
+                    ...res.data(),
+                });
+            })
+            .catch((error)=>{
+                console.log(error)
+            })
+            .finally(()=>{
+                setLoading(false);
             });
-        };
-        TraerPanes()
-        .then((res)=>{
-            setDetail(res)
-        })
-        .catch((error)=>{
-            console.log(error)
-        });
+        },2000)
+       
     }, [porId]);
 
-
+    if(loading){
+        const color = '#f3a446'
+        return(
+            <div className={loading === true ? 'Loading-contenedor' : 'Loading-contenedor2'}>
+            <BounceLoader size={300} color={color}/>
+            </div>
+        )
+    }
   return (
     <div className='Item-Detail-Conteiner'>
         <ItemDetail detail={detail}/>

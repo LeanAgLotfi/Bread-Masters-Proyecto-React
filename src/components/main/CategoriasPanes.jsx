@@ -1,8 +1,10 @@
-import React from 'react'
+import {React} from 'react'
 import ItemCategory from '../header/itemCategory';
 
 
+
 function CategoriasPanes() {
+
   return (
     <div>
        <nav className="NavegacionPage">
