@@ -6,7 +6,7 @@ export default function ItemList() {
     <> 
     <NavLink to={'/'}>HOME</NavLink>
     <NavLink to={'/item'}>MENÚ</NavLink>
-    <NavLink to={'/'}>CONTACTO</NavLink>
+    <NavLink to={'/contacto'}>CONTACTO</NavLink>
     </>
  
   )

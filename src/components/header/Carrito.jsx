@@ -34,7 +34,7 @@ if (cart.length === 0) {
       <div className='total'>
         <h1>TOTAL:${Total()}</h1>
         <div className='total2'>
-          <button className="botonCarta boton1" >CheckOut</button>
+          <button className="botonCarta boton1"><Link to={'/form'}>CheckOut</Link></button>
           <button className="botonCarta boton1" onClick={removeAll}>Eliminar X</button>
         </div>
         
