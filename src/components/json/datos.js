@@ -1,7 +1,7 @@
 export const panes = [
     {
         nombre: "Pan de Hogaza",
-        id: 1,
+        
         price: 200,
         stock: 20,
         category:"trigo",
@@ -10,7 +10,7 @@ export const panes = [
     },
     {
         nombre: "Baguette",
-        id: 2,
+        
         price: 100,
         stock: 20,
         category:"trigo",
@@ -19,7 +19,7 @@ export const panes = [
     },
     {
         nombre: "Foccacia",
-        id: 3,
+        
         price: 300,
         stock: 20,
         category:"trigo",
@@ -28,7 +28,7 @@ export const panes = [
     },
     {
         nombre: "Pan de Ajo",
-        id: 4,
+        
         price: 50,
         stock: 20,
         category:"cereales",
@@ -37,7 +37,7 @@ export const panes = [
     },
     {
         nombre: "Bagel",
-        id: 5,
+        
         price: 200,
         stock: 20,
         category:"cereales",
@@ -46,7 +46,7 @@ export const panes = [
     },
      {
         nombre: "Pan de Centeno",
-        id: 6,
+       
         price: 100,
         stock: 20,
         category:"cereales",
@@ -55,7 +55,7 @@ export const panes = [
     },
     {
         nombre: "Pan de Queso",
-        id: 7,
+      
         price: 150,
         stock: 20,
         category:"cereales",
@@ -64,7 +64,7 @@ export const panes = [
     },
      {
         nombre: "Pan de Mollete",
-        id: 8,
+        
         price: 400,
         stock: 20,
         category:"legumbres",
@@ -73,7 +73,7 @@ export const panes = [
     },
     {
         nombre: "Pan de Chapata",
-        id: 9,
+       
         price: 120,
         stock: 20,
         category:"legumbres",
@@ -82,7 +82,7 @@ export const panes = [
     },
     {
         nombre: "Pan de Naan",
-        id: 10,
+       
         price: 170,
         stock: 20,
         category:"legumbres",
@@ -91,7 +91,7 @@ export const panes = [
     },
      {
         nombre: "Piadina",
-        id: 11,
+     
         price: 90,
         stock: 20,
         category:"legumbres",
@@ -100,7 +100,7 @@ export const panes = [
     },
     {
         nombre: "Pan de Papa",
-        id: 12,
+      
         price: 300,
         stock: 20,
         category:"legumbres",

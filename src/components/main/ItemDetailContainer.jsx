@@ -30,7 +30,7 @@ const ref = doc(collectionProd, porId)
             .finally(()=>{
                 setLoading(false);
             });
-        },2000)
+        },500)
        
     }, [porId]);
 

@@ -22,7 +22,10 @@ const removeAll = ()=> setCart([]);
 
 console.log(cart)
 
-// const removeToCart = () =>  ;
+const removeToCart = (id) => {
+    const prodFiltrados = cart.filter((prod) => prod.id !== id);
+    setCart(prodFiltrados );
+};
 
 const sumarUnidades = (prodAgregado)=>{
     const carritoActualizado = cart.map((prodNuevo)=> {
@@ -37,10 +40,17 @@ const sumarUnidades = (prodAgregado)=>{
     });
     return setCart(carritoActualizado);
 };
-// const sumaTotal = () => ;
+
+const removeOne =(cart) => {
+    
+};
+
+const Total = () =>{
+    return cart.reduce((acc, item) => acc += item.price * item.cantidad, 0)
+};
 
     return(
-        <ContextoCarrito.Provider value={{ cart ,addToCart, removeAll}}> 
+        <ContextoCarrito.Provider value={{ cart ,addToCart, removeAll, sumarUnidades, Total, removeToCart, removeOne}}> 
             {props.children}
         </ContextoCarrito.Provider >   
     )

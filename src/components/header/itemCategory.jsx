@@ -32,10 +32,13 @@ getDocs(categoryFire)
    {
     category.map((cat)=>{
       return(
-         <NavLink to={`/item/${cat.path}`}>{cat.name}</NavLink>
+         <NavLink key={cat.id} to={`/item/${cat.path}`}>{cat.name}</NavLink>
       );
     })
    }
+
+
+
     </>
  
   )

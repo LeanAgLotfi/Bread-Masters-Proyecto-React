@@ -51,7 +51,7 @@ export default function ContenedorCartas() {
         .finally(()=>{
             setLoading(false);
         });
-        },2000);
+        },500);
        
     },[categoryName])
 

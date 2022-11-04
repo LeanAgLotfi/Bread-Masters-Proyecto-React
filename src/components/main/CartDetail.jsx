@@ -1,7 +1,11 @@
 import React from 'react'
-
+import { useContext } from 'react';
+import { ContextoCarrito } from '../../context/ContextoCarrito';
 
 function CartDetail({prod}) {
+
+  const { removeToCart} = useContext(ContextoCarrito);
+
 
   return (
     <div className='carrito-detalle'>
@@ -16,8 +20,9 @@ function CartDetail({prod}) {
                 <p>Cantidad: {prod.cantidad}</p>
                 <p>SubTotal: ${prod.price * prod.cantidad}</p>
             </div>
-            <button className="botonCarta boton2">+</button>
-       
+            <div className='contenedor-botones'>
+            <button className="botonCarta boton1" onClick={() => removeToCart(prod.id)}>delete</button>
+            </div>
     </div>
   )
 }
