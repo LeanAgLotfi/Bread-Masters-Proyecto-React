@@ -19,18 +19,6 @@ export default function ContenedorCartas() {
    //trigo - cereales - legumbres
 
     useEffect(()=>{
-        // const TraerPanes = ()=>{
-        //     return new Promise ((res, rej) =>{
-        //         const prodFiltrados = panes.filter(
-        //             (prod) => prod.category === categoryName
-        //         );
-        //         const prod = categoryName ? prodFiltrados : panes;
-        //         setTimeout(()=>{
-        //             res(prod);
-        //         },2000);
-        //     });
-        // };
-        // TraerPanes()
         const collectionProd = collection(db,'panes');
         const logica = categoryName  ? query(collectionProd, where('category', '==', categoryName)) : collectionProd;
         setTimeout(()=>{

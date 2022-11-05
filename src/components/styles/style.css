@@ -452,14 +452,12 @@ flex-direction: column;
     border: 1px solid;
     border-radius: 10px;
     margin: 20px;
-    background: chocolate;
+    background: #a56130f5;
     width: 250px;
     text-align: center;
 
 }
-.total.eliminar{
-    border: 1px solid red;
-}
+
 
 .SinComprar{
     display: flex;
