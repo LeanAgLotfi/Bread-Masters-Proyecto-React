@@ -535,6 +535,75 @@ flex-direction: column;
    cursor: pointer;
 }
 
+.contacto{
+    margin: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 0px 50px 0px 50px;
+    background: #a06135b8;
+    border-radius: 10px;
+}
+
+
+
+.contacto-title h1{
+    color: #f3a446;
+    border-bottom: 1px solid #f3a446;
+    margin-bottom: 30px;
+}
+
+.contacto-title  .h2-section{
+    margin-bottom: 15px;
+    color: #1d1d1d;
+}
+
+.contacto-contacto{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #f3a446;
+    
+ }  
+.contacto-contacto ul{
+    list-style: none;
+    color: #f3a446;
+    font-size: 18px;
+}
+
+.contacto-contacto ul li{
+   padding: 25px;
+    
+}
+.contacto-contacto img{
+    width: 400px; 
+    border-radius: 10px;
+}
+
+.terminos-condiciones{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    
+}
+.terminos-condiciones h1{
+    margin-bottom: 10px; 
+    border-top: 1px solid #f3a446;
+    border-bottom: 1px solid #f3a446;
+    color: #f3a446;
+}
+
+.terminos-condiciones h2{
+    margin-bottom: 10px; 
+    padding: 10px;
+    padding-left: 60px;
+    padding-right: 60px;
+    text-align: center;
+    color: #1d1d1d;
+}
+
 .FooterPage{
     position: relative;
     background-color: #ffffff63;
