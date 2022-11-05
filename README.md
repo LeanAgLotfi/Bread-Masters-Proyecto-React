@@ -1,70 +1,76 @@
-# Getting Started with Create React App
+# Bread Masters - Proyecto e-commerce de panaderia online
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Proyecto aprendiendo a usar React en conjunto con  [CoderHouse](https://www.coderhouse.com/). 
 
-## Available Scripts
+#
 
-In the project directory, you can run:
+# Datos del Proyecto
 
-### `npm start`
+`DEMO ` del poyecto: [http://localhost:3000](http://localhost:3000) 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### `Breve descripción`
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Este trabajo esta inspirado en el pan de hogaza clásico de panaderia medieval y tambien una muy ligera inpiracion en la serie `Game of Thrones!.`
 
-### `npm test`
+El proyecto tiene la funcion de simular un e-commerce creado enteramente con react y estilado con css y algunas librerias extras.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### `¿Que te podes encontrar?`
 
-### `npm run build`
+Comenzamos en un Home que tiene por objetivo redirigirte a la sección de menú de panes, mostrando el logo creado por mi en Canva, Una vez scoles hacia abajo encontraras el boton `EXPLORE` comenzando asi con los panes!.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Una vez en el menú podras encontrar 12 carts llamadas por medio de promesas a [FireBase](https://firebase.google.com/?hl=es). Podras entrar al apartado de cada carta o detalle con el boton `Lear More`.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+En el detalle del producto podras encontrar la funcionalidad de Agregar y Disminuir del carrito los productos seleccionados. Una vez elegida la cantidad, podras acceder a `add to cart` para agregar el producto al carrito.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+El detalle se modifica y aparecera un boton que te redirige al carrito, mostrando tu producto elegido, su total a pagar, cantidad y subtotal si se encuentra otro producto dentro del carrito. 
 
-### `npm run eject`
+### `Otras funcionalidades`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Puedes acceder a el boton `delete` para eliminar completamente el obejeto del carrito o `dellete all `para eliminar todos los productos del carrito!
+#
+### `Comprando?`
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+La siguiente funcionalidad es una autentificación de datos personales, para recibir asi tu numero de seguimiento, asi entras en contacto con el vendedor y acuerdan los metodos de pago. (se accede a la misma entrado a el boton `CheckOut ` del carrito).
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# `¿Como ingresar al Proyecto?`
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## paso 1
 
-## Learn More
+- Clonar el proyecto en tu computador
+```
+https://github.com/LeanAgLotfi/Bread-Masters-Proyecto-React.git
+```
+## paso 2
+- Abrirlo en un editor de codigo e instalar dependencias 
+```
+npm i // npm install
+```
+## paso 3
+- Ingresar por terminal a 
+```
+cd Prueba-React
+cd componentes
+```
+## paso 4
+- Iniciar Proyecto
+```
+npm start
+```
+#
+### `Librerias Usadas`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+**Estas son algunas de las librerias usadas y para que fueron utilizadas**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- FireBase
+`(fue usada para almacenar el mock de productos, tambien para agregar a las personas que utilicen el servicio de Bread Masters)`
+- React-dom `(Para proporcionar los metodos necesarios del DOM para el proyecto)`
+- React-icons `(Utilizada para los iconos en pantalla)`
+- React-router-dom `(Para crear las rutas de la web)`
+- React-scripts `(Para que funcione la app)`
+- React-spinners `(Para el spinner que fue usado como loader de la página)`
+- Cloudinary-react `(Para las imagenes que contiene el mock de productos)`
+   
+   #
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+   # ASI CONCLUYE EL TRABAJO
+   FIN

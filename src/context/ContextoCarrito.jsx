@@ -20,8 +20,6 @@ const enCarrito = (id) => cart.some((prod) => prod.id === id);
 
 const removeAll = ()=> setCart([]);
 
-console.log(cart)
-
 const removeToCart = (id) => {
     const prodFiltrados = cart.filter((prod) => prod.id !== id);
     setCart(prodFiltrados );

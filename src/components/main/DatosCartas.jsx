@@ -1,12 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-// import { useContext } from 'react';
-// import { ContextoCarrito } from '../../context/ContextoCarrito';
 
 export default function DatosCartas({prod}) {
-
-  // const { addToCart, sumarUnidades } = useContext(ContextoCarrito);
-
 
   return (
     <div className="carta">

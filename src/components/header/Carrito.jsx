@@ -37,9 +37,6 @@ if (cart.length === 0) {
           <button className="botonCarta boton1"><Link to={'/form'}>CheckOut</Link></button>
           <button className="botonCarta boton1" onClick={removeAll}>Eliminar X</button>
         </div>
-        
-        
-        
       </div>
   </>
   )
