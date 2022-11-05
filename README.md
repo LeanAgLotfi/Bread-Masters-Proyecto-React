@@ -1,20 +1,22 @@
 # Bread Masters - Proyecto e-commerce de panaderia online
 
+![](https://res.cloudinary.com/dsoa7ssat/image/upload/v1665593101/Panes/bread-masters_gvwrjv.png)
+
 ### Proyecto aprendiendo a usar React en conjunto con  [CoderHouse](https://www.coderhouse.com/). 
 
 #
 
 # Datos del Proyecto
 
-`DEMO ` del poyecto: [http://localhost:3000](http://localhost:3000) 
+DEMO del poyecto: [http://localhost:3000](http://localhost:3000) 
 
-### `Breve descripción`
+### Breve descripción
 
 Este trabajo esta inspirado en el pan de hogaza clásico de panaderia medieval y tambien una muy ligera inpiracion en la serie `Game of Thrones!.`
 
 El proyecto tiene la funcion de simular un e-commerce creado enteramente con react y estilado con css y algunas librerias extras.
 
-### `¿Que te podes encontrar?`
+### ¿Que te podes encontrar?
 
 Comenzamos en un Home que tiene por objetivo redirigirte a la sección de menú de panes, mostrando el logo creado por mi en Canva, Una vez scoles hacia abajo encontraras el boton `EXPLORE` comenzando asi con los panes!.
 
@@ -24,15 +26,15 @@ En el detalle del producto podras encontrar la funcionalidad de Agregar y Dismin
 
 El detalle se modifica y aparecera un boton que te redirige al carrito, mostrando tu producto elegido, su total a pagar, cantidad y subtotal si se encuentra otro producto dentro del carrito. 
 
-### `Otras funcionalidades`
+### Otras funcionalidades
 
-Puedes acceder a el boton `delete` para eliminar completamente el obejeto del carrito o `dellete all `para eliminar todos los productos del carrito!
+Puedes acceder a el boton `delete` para eliminar completamente el obejeto del carrito o `dellete all`para eliminar todos los productos del carrito!
 #
-### `Comprando?`
+### Comprando?
 
-La siguiente funcionalidad es una autentificación de datos personales, para recibir asi tu numero de seguimiento, asi entras en contacto con el vendedor y acuerdan los metodos de pago. (se accede a la misma entrado a el boton `CheckOut ` del carrito).
+La siguiente funcionalidad es una autentificación de datos personales, para recibir asi tu numero de seguimiento, asi entras en contacto con el vendedor y acuerdan los metodos de pago. (se accede a la misma entrado a el boton `CheckOut` del carrito).
 
-# `¿Como ingresar al Proyecto?`
+# ¿Como ingresar al Proyecto?
 
 ## paso 1
 
@@ -57,7 +59,7 @@ cd componentes
 npm start
 ```
 #
-### `Librerias Usadas`
+### Librerias Usadas
 
 **Estas son algunas de las librerias usadas y para que fueron utilizadas**
 
